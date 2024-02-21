@@ -1,0 +1,45 @@
+name: crud
+description: A new Flutter project.
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: '>=3.0.3 <4.0.0'
+
+dependencies:
+  #Firebase 
+  cloud_firestore: ^4.15.5
+  firebase_auth: ^4.17.4
+  firebase_core: ^2.25.4
+  firebase_storage: ^11.6.6
+  flutter:
+    sdk: flutter
+
+  #Sidable  
+  flutter_slidable: ^3.0.1
+  
+  #Otp input
+  fluttertoast: ^8.2.4
+  image_picker: ^1.0.7
+  pinput: ^4.0.0
+
+  #State Management
+  random_string: ^2.3.1
+  stacked: ^3.4.0
+
+  #Services
+  stacked_services: ^1.1.0
+
+dev_dependencies:
+  build_runner: ^2.4.5
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+  mockito: ^5.4.1
+  stacked_generator: ^1.3.3
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/
+
