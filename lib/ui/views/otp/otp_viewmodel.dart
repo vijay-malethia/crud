@@ -18,7 +18,16 @@ class OtpViewModel extends BaseViewModel {
     notifyListeners();
   }
 
-  void verifyOtp({verificationId, smsCode}) async {
+  void verifyOtp(context,{verificationId, smsCode}) async {
+     FocusScope.of(context).unfocus();
+    Fluttertoast.showToast(
+        msg: 'Wait for while ',
+        toastLength: Toast.LENGTH_SHORT,
+        gravity: ToastGravity.CENTER,
+        timeInSecForIosWeb: 1,
+        backgroundColor: Colors.red,
+        textColor: Colors.white,
+        fontSize: 16.0);
     PhoneAuthCredential credential = PhoneAuthProvider.credential(
         verificationId: verificationId, smsCode: smsCode);
     try {

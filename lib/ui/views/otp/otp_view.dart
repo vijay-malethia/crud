@@ -47,7 +47,7 @@ class OtpView extends StackedView<OtpViewModel> {
                             MaterialStatePropertyAll(Color(0xFF674EA4))),
                     onPressed: () {
                       if (viewModel.otp.length == 6) {
-                        viewModel.verifyOtp(
+                        viewModel.verifyOtp(context,
                             verificationId: id, smsCode: viewModel.otp);
                       }
                     },

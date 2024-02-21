@@ -37,14 +37,12 @@ class AuthView extends StackedView<AuthViewModel> with $AuthView {
                       elevation: MaterialStatePropertyAll(0),
                       backgroundColor:
                           MaterialStatePropertyAll(Color(0xFF674EA4))),
-                  onPressed: () =>
-                      viewModel.verifyNumber(phoneNumberController.text),
-                  child: viewModel.isBusy
-                      ? const CircularProgressIndicator()
-                      : const Text(
-                          'CONTINUE',
-                          style: TextStyle(color: Colors.white),
-                        ))
+                  onPressed: () => viewModel.verifyNumber(
+                      phoneNumberController.text, context),
+                  child: const Text(
+                    'CONTINUE',
+                    style: TextStyle(color: Colors.white),
+                  ))
             ],
           ),
         ),
