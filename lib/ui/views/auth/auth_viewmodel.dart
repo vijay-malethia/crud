@@ -21,7 +21,7 @@ class AuthViewModel extends BaseViewModel with $AuthView {
         toastLength: Toast.LENGTH_SHORT,
         gravity: ToastGravity.CENTER,
         timeInSecForIosWeb: 1,
-        backgroundColor: Colors.red,
+        backgroundColor: Colors.white,
         textColor: Colors.white,
         fontSize: 16.0);
     await FirebaseAuth.instance.verifyPhoneNumber(

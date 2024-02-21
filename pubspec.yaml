@@ -18,14 +18,20 @@ dependencies:
   #Sidable  
   flutter_slidable: ^3.0.1
   
-  #Otp input
+  #For toast
   fluttertoast: ^8.2.4
+
+  #Image picker
   image_picker: ^1.0.7
+
+  #Otp input
   pinput: ^4.0.0
 
   #State Management
-  random_string: ^2.3.1
   stacked: ^3.4.0
+
+  #Generate random string
+  random_string: ^2.3.1
 
   #Services
   stacked_services: ^1.1.0
