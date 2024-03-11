@@ -1,3 +1,4 @@
+// import 'package:crud/services/google_sign_in_service.dart';
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:stacked/stacked.dart';
@@ -11,8 +12,9 @@ import 'package:crud/ui/views/auth/auth_view.form.dart';
 
 class AuthViewModel extends BaseViewModel with $AuthView {
   final _navigationService = locator<NavigationService>();
+  // final GoogleSignInService _googleSignInService =
+  //     locator<GoogleSignInService>();
   FirebaseAuth auth = FirebaseAuth.instance;
-
 
   void verifyNumber(phoneNumber, context) async {
     FocusScope.of(context).unfocus();

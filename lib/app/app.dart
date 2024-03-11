@@ -1,4 +1,4 @@
-import 'package:crud/services/databasemethods_service.dart';
+import 'package:crud/services/google_sign_in_service.dart';
 import 'package:stacked/stacked_annotations.dart';
 import 'package:stacked_services/stacked_services.dart';
 
@@ -8,6 +8,7 @@ import 'package:crud/ui/views/startup/startup_view.dart';
 import 'package:crud/ui/views/auth/auth_view.dart';
 import 'package:crud/ui/views/otp/otp_view.dart';
 import 'package:crud/ui/bottom_sheets/add_edit_item/add_edit_item_sheet.dart';
+import 'package:crud/services/databasemethods_service.dart';
 
 @StackedApp(
   // @stacked-route
@@ -24,6 +25,7 @@ import 'package:crud/ui/bottom_sheets/add_edit_item/add_edit_item_sheet.dart';
     LazySingleton(classType: DialogService),
     LazySingleton(classType: NavigationService),
     LazySingleton(classType: DatabasemethodsService),
+    LazySingleton(classType: GoogleSignInService),
   ],
 
   // @stacked-bottom-sheet

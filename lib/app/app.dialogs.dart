@@ -16,6 +16,7 @@ void setupDialogUi() {
   final dialogService = locator<DialogService>();
 
   final Map<DialogType, DialogBuilder> builders = {
+  
   };
 
   dialogService.registerCustomDialogBuilders(builders);
